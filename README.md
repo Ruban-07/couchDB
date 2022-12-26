@@ -7,35 +7,35 @@ Please run the below commands step by step to install couchDB in `UBUNTU`
 
 **Installation command**
 ```dart
-$ sudo snap install couchdb
+sudo snap install couchdb
 ```
 
 **Couch Status**
 ```dart
-$ couchdb
+couchdb
 ```
 
 **Setup Admin Password**
 ```dart
-$ sudo snap set couchdb admin=*******
+sudo snap set couchdb admin=*******
 ```
 
 **Start couchDB Server**
 ```dart
-$ sudo snap start couchdb
+sudo snap start couchdb
 ```
 
 **Observe when to initiate cleanup**
 ```dart
-$ sudo snap connect couchdb:mount-observe
+sudo snap connect couchdb:mount-observe
 ```
 
 **indexer to set the priority of couchjs**
 ```dart
-$ sudo snap connect couchdb:process-control
+sudo snap connect couchdb:process-control
 ```
 
 **Finally run this URL & login to your DB as `Admin`**
 ```dart
-$ http://127.0.0.1:5984/_utils/#login
+http://127.0.0.1:5984/_utils/#login
 ```
